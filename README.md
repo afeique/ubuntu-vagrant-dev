@@ -1,6 +1,6 @@
 # Ubuntu Vagrant for Development
 
-This Vagrantfile and associated shell scripts provision an Ubuntu LTS setup for development using [Vagrant]. This environment is aimed at PHP and Python development.
+This Vagrantfile and associated shell scripts provision an Ubuntu LTS setup for development using [Vagrant]. This environment is aimed at PHP and Python development. It does preinstall database packages, only programming languages. This makes it suitable as a base for running unit tests.
 
 Using this guide, a consistent development environment can be setup on *any* operating system (Linux, OSX, Windows) in a matter of minutes.
 
@@ -16,18 +16,8 @@ Using this guide, a consistent development environment can be setup on *any* ope
 
 These are the actual steps taken:
 
-* Install package dependencies using `apt-get`:
-    * `git`
-    * `php`
-    * `curl`
-    * `php-cli`
-    * `php-soap`
-    * `php-mbstring`
-    * `iputils-ping`
-    * `smbclient`
-    * `sshpass`
-    * `docker.io`
-    * `unzip`
+* Install PHP and extensions necessary for composer
+* Install [Miniconda3] for Python3 development support
 * Setup git user globals (`$GIT_NAME`, `$GIT_EMAIL`, `$GIT_USER`)
 * Copy public, private keys from host machine into VM
 * Install latest `composer`
@@ -76,3 +66,4 @@ For more information, read about [getting started with Vagrant].
 [Vagrant]: https://www.vagrantup.com/
 [getting started with Vagrant]: https://www.vagrantup.com/intro/getting-started/index.html
 [Composer]: https://getcomposer.org/download/
+[Miniconda3]: https://docs.conda.io/en/latest/miniconda.html
