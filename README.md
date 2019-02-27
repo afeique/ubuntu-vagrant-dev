@@ -11,7 +11,6 @@ Using this guide, a consistent development environment can be setup on *any* ope
 * SSH keys generated for your host and loaded onto your gitlab and okta accounts.
     * `ssh-keygen -t rsa -b 4096 -C "user@email.com"`
     * `cat ~/.ssh/id_rsa.pub`
-* **IMPORTANT:** If you plan on developing on a forked repo (e.g. an `origin` repo), fork manually _using the gitlab UI._ This is in case secrets have been committed to the repo and need to be cloned.
 
 ## Methodology
 
