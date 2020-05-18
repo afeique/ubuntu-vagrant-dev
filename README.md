@@ -1,6 +1,6 @@
 # Ubuntu Vagrant for Development
 
-This Vagrantfile and associated shell scripts provision an Ubuntu LTS setup for development using [Vagrant]. This environment is aimed at PHP and Python development. It does preinstall database packages, only programming languages. This makes it suitable as a base for running unit tests.
+This Vagrantfile and associated shell scripts provision an Ubuntu LTS setup for development using [Vagrant]. This environment is aimed at PHP and Python development. It doesn't preinstall database packages, only programming languages. This makes it suitable as a base for running unit tests.
 
 Using this guide, a consistent development environment can be setup on *any* operating system (Linux, OSX, Windows) in a matter of minutes.
 
